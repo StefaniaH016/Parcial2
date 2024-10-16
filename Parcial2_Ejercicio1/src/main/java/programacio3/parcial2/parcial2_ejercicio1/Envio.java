@@ -1,17 +1,22 @@
 package programacio3.parcial2.parcial2_ejercicio1;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Envio {
+public class Envio implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
     private String codigo;
     private LocalDate fechaEnvio;
     private Zona zona;
     private int total;
-    private String cliente;
+    private Cliente cliente;
     private ArrayList<Paquete> paquetes;
 
-    public Envio(String codigo, LocalDate fechaEnvio, Zona zona, int total, String cliente, ArrayList<Paquete> paquetes) {
+    public Envio(String codigo, LocalDate fechaEnvio, Zona zona, int total, Cliente cliente, ArrayList<Paquete> paquetes) {
         this.codigo = codigo;
         this.fechaEnvio = fechaEnvio;
         this.zona = zona;
@@ -52,11 +57,11 @@ public class Envio {
         this.total = total;
     }
 
-    public String getCliente() {
+    public Cliente getCliente() {
         return cliente;
     }
 
-    public void setCliente(String cliente) {
+    public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
 

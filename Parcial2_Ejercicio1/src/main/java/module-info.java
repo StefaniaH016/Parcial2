@@ -10,7 +10,9 @@ module programacio3.parcial2.parcial2_ejercicio1 {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
 
     opens programacio3.parcial2.parcial2_ejercicio1 to javafx.fxml;
     exports programacio3.parcial2.parcial2_ejercicio1;
+
 }

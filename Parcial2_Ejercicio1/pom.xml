@@ -134,7 +134,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                programacio3.parcial2.parcial2_ejercicio1/programacio3.parcial2.parcial2_ejercicio1.HelloApplication
+                                programacio3.parcial2.parcial2_ejercicio1/programacio3.parcial2.parcial2_ejercicio1.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

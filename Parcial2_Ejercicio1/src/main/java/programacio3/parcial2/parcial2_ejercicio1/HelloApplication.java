@@ -20,4 +20,20 @@ public class HelloApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+        String archivo, formato;
+    
+        archivo = "/Users/Admin/ideaProjects/Parcial2_Ejercicio1/Envios.txt";
+
+        formato = "@%s" + "\n";
+        
+        try {
+            PersistenciaSeries.almacenarDatos(archivo, formato, envios);
+
+
+        } catch (Exception e) {
+
+            JOptionPane.showMessageDialog(null, "Error en la manipulacion del archivo " + e.getMessage(), "Dialogo de Error", JOptionPane.ERROR_MESSAGE);
+
+        }
 }
